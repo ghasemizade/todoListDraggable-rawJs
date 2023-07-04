@@ -133,3 +133,22 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #999;
+    padding: 1rem;
+    transition: .2s;
+}
+.task:hover{
+    background-color: #64b3e7;
+}
+.task ion-icon{
+    cursor: pointer;
+    font-size: 28px;
+}
+.task ion-icon:hover{
+    background-color: tomato;
+}
