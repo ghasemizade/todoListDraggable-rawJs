@@ -64,3 +64,20 @@ body{
 .modal-body button:hover{
     background-color: rgb(111, 184, 104);
 }
+/* todo list style */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    margin-top: 10rem;
+}
+.todo-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #888; */
+}
+.todo-list .title{
+    margin-right: 5rem;
+}
