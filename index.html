@@ -14,23 +14,26 @@
     <div id="modal">
         <div class="modal-box">
             <div class="modal-header">
-                <h4>Add Task</h4>
-                <ion-icon name="close-outline"></ion-icon>
+                <!-- <h4>Add Task</h4> -->
             </div>
             <div class="modal-body">
                 <input type="text">
                 <button>Add Todo</button>
+                <div id="cancle">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- body todo list -->
     
-    <div class="container">
+    <div id="container">
         <div class="todo-list">
             <div class="no-status col-1">
                 <div class="title">No Status</div>
                 <div id="status-content">
+                    <!-- add Btn todo -->
                     <div class="add-btn">
                         <button id="add-todo">Add Todo</button>
                     </div>
@@ -50,6 +53,8 @@
             </div>
         </div>
     </div>
+
+    <div id="overlay"></div>
 
     <script src="./todo.js"></script>
 </body>

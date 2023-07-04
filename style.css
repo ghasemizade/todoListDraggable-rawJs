@@ -5,13 +5,14 @@
 }
 body{
     font-family:'Courier New', Courier, monospace;
-    /* backdrop-filter: blur(10px); */
 }
 #modal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     display: none;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transition: top 0.3s ease-in-out;
+    z-index: 2;
 }
 .modal-box{
     width: 60%;
@@ -22,17 +23,22 @@ body{
     margin-top: 2rem;
     
 }
-.modal-header{
-    padding: .7rem;
-    background-color: #aaa;
-    border-bottom: 1px solid #888;
-    width: 50%;
+#cancle{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: 10rem;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+#cancle:hover{
+    background-color: tomato;
 }
 .modal-body{
     display: flex;
@@ -42,14 +48,21 @@ body{
 }
 .modal-body input{
     outline: none;
-    border-radius: .2rem;
+    /* border-radius: .2rem; */
     border: none;
     background-color: #eee;
     width: 270px;
-    padding: .4rem;
+    padding: .7rem;
     margin-bottom: 1rem;
-    border-left: 1px solid #111;
-    border-right: 1px solid #111;
+    color: #555;
+    font-size: 18px;
+    transition: .1s;
+    border-bottom: 3px solid tomato;
+}
+.modal-body input:focus{
+    border-bottom: 3px solid #64b3e7;
+    color: #555;
+    font-size: 18px;
 }
 .modal-body button{
     font-size: 20px;
@@ -65,12 +78,11 @@ body{
     background-color: rgb(111, 184, 104);
 }
 /* todo list style */
-.container{
+#container{
     display: flex;
     justify-content: center;
     align-items: safe;
     min-height: 100vh;
-
 }
 .todo-list{
     display: flex;
@@ -109,4 +121,14 @@ body{
 }
 .add-btn button:hover{
     background-color: rgb(111, 184, 104);
+}
+#overlay {
+    display: none;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
