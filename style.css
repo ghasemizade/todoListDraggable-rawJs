@@ -68,35 +68,45 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: safe;
     min-height: 100vh;
-    margin-top: 10rem;
+
 }
 .todo-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #eee;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
 }
 .todo-list .title{
-    background-color: #888;
-    padding: 1rem;
-    /* margin: 0  3rem; */
+    background-color: #444;
+    padding: 1rem 2rem;
 }
 #status-content{
-    height: 200px;
+    height: 500px;
     background-color: #ddd;
 }
 #started-content{
-    height: 200px;
+    height: 500px;
     background-color: #ddd;
 }
 #progress-content{
-    height: 200px;
+    height: 500px;
     background-color: #ddd;
 }
 #completed-content{
-    height: 200px;
+    height: 500px;
     background-color: #ddd;
+}
+.add-btn button{
+    background-color: rgba(111, 184, 104, 0.747);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+.add-btn button:hover{
+    background-color: rgb(111, 184, 104);
 }
