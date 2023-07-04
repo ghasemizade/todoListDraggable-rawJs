@@ -17,8 +17,8 @@
                 <!-- <h4>Add Task</h4> -->
             </div>
             <div class="modal-body">
-                <input type="text">
-                <button>Add Todo</button>
+                <input id="input" type="text">
+                <button id="btn-add">Add Todo</button>
                 <div id="cancle">
                     <ion-icon name="close-outline"></ion-icon>
                 </div>
@@ -39,9 +39,9 @@
                     </div>
 
                     <!-- tasks -->
-                    <div class="task">
+                    <div class="task" draggable="true">
                         <p id="desc">learn Js</p>
-                        <ion-icon name="close-outline"></ion-icon>
+                        <ion-icon id="close-icon" name="close-outline"></ion-icon>
                     </div>
                 </div>
             </div>

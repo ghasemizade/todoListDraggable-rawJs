@@ -141,8 +141,6 @@ body{
     background-color: #999;
     padding: 1rem;
     transition: .2s;
-}
-.task:hover{
     background-color: #64b3e7;
 }
 .task ion-icon{
