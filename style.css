@@ -35,3 +35,17 @@ body{
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
+.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-body input{
+    border-radius: .2rem;
+    border: none;
+    background-color: #ddd;
+    width: 270px;
+    padding: .4rem;
+    margin-bottom: 1rem;
+}
