@@ -3,3 +3,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family:'Courier New', Courier, monospace;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+#modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-box{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+}
+.modal-header{
+    padding: .7rem;
+    background-color: #aaa;
+    border-bottom: 1px solid #555;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
