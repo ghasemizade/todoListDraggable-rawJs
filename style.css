@@ -5,14 +5,13 @@
 }
 body{
     font-family:'Courier New', Courier, monospace;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    /* backdrop-filter: blur(10px); */
 }
 #modal{
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 .modal-box{
     width: 60%;
@@ -42,10 +41,26 @@ body{
     flex-direction: column;
 }
 .modal-body input{
+    outline: none;
     border-radius: .2rem;
     border: none;
-    background-color: #ddd;
+    background-color: #eee;
     width: 270px;
     padding: .4rem;
     margin-bottom: 1rem;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+}
+.modal-body button{
+    font-size: 20px;
+    border: none;
+    width: 270px;
+    padding: .8rem;
+    background-color: rgba(111, 184, 104, 0.747);
+    border-radius: .4rem;
+    transition: .2s;
+    cursor: pointer;
+}
+.modal-body button:hover{
+    background-color: rgb(111, 184, 104);
 }
