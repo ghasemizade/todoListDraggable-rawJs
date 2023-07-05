@@ -114,7 +114,7 @@ body{
 .add-btn button{
     background-color: rgba(111, 184, 104, 0.747);
     border: none;
-    padding: 1rem;
+    padding: 18px;
     cursor: pointer;
     width: 100%;
     color: #eee;
@@ -125,7 +125,7 @@ body{
 }
 #overlay {
     display: none;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     position: fixed;
     top: 0;
     left: 0;
@@ -137,9 +137,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     background-color: #999;
-    padding: 1rem;
+    padding: 15.5px;
     transition: .2s;
     background-color: #64b3e7;
 }
